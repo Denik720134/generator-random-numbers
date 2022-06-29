@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA_Compatible" content="ie=edge">
+        <title>Генератор рандомных чисел</title>
+    <body>
+             <!-- <script src="./index.js<script> -->
+            <script>
+            var ru;
+            var rutwo;
+            var step;
+            vibor = prompt("Select language! ru and eng")
+            if(vibor == "ru") {
+                ru = "Сколько ты хочешь сгенирировать чисел?";
+                rutwo = "Введите максимальное число!"
+            }
+            else if(vibor == "eng") {
+                ru = "What you want a generate numbers";
+                rutwo = "Type max number!"
+            }
+            vibortwo = prompt(rutwo)
+            
+            rax = prompt(ru);
+            
+        for (step = 0; step < rax; step++) {
+            let number = Math.random() * vibortwo;
+
+            number = Math.ceil(number);
+ 
+            alert(number);
+        }
+    </script>
+</html>
+</body>
